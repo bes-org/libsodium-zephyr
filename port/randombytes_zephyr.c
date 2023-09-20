@@ -13,7 +13,7 @@
 // limitations under the License.
 #include "randombytes_internal.h"
 #include <zephyr/kernel.h>
-#include <random/rand32.h>
+#include <zephyr/random/rand32.h>
 
 static const char *randombytes_zephyr_implementation_name(void)
 {
