@@ -147,6 +147,8 @@ zephyr_library_compile_definitions(
 )
 
 # patch around warnings in third-party files
+zephyr_library_compile_options( -Wno-unused-function )
+
 set_source_files_properties(
     ${SRC}/crypto_pwhash/argon2/pwhash_argon2i.c
     ${SRC}/crypto_pwhash/argon2/argon2-core.c
